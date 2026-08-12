@@ -1,4 +1,4 @@
-cask "baocut-cli" do
+cask "baocut" do
   version "1.0.8,43"
   sha256 "4e41dce294782e00cfb25287aadabc2360d76bb2f89c700025521509412e075b"
 

@@ -19,4 +19,14 @@ cask "baocut" do
   depends_on formula: "ffmpeg"
 
   binary "bcut"
+
+  zap trash: [
+    "~/.cache/bcut",
+    "~/Library/Application Support/BaoCut/.bcut-secrets.lock",
+    "~/Library/Application Support/BaoCut/.jobs.json.lock",
+    "~/Library/Application Support/BaoCut/config.json",
+    "~/Library/Application Support/BaoCut/jobs.json",
+    "~/Library/Application Support/BaoCut/key-masks.json",
+    "~/Library/Application Support/BaoCut/secrets.json",
+  ]
 end

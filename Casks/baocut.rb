@@ -1,6 +1,6 @@
 cask "baocut" do
-  version "1.0.9,44"
-  sha256 "3633dc31c3975e5dcf9a7fca3fefd56e2ed5c429efdcf7f0ae10237a719caafe"
+  version "1.0.10,45"
+  sha256 "8f8be9f4dc1b13c9a84868effbb66faa9576bafef2f24e9e08de95801454d07d"
 
   url "https://github.com/JimLiu/baocut/releases/download/baocut-v#{version.csv.first}-build.#{version.csv.second}/bcut-#{version.csv.first}-build.#{version.csv.second}-aarch64-apple-darwin.zip"
   name "BaoCut CLI"
@@ -16,7 +16,6 @@ cask "baocut" do
 
   depends_on arch: :arm64
   depends_on macos: :sequoia
-  depends_on formula: "ffmpeg"
 
   binary "bcut"
 
